@@ -1,0 +1,243 @@
+/*<!-- css Variables -->*/
+:root{
+	--primary-color: #004128;
+	--white: #FFFFFF;
+	--yellow: #FFCB67;
+}
+/*UTILITY CLASS*/
+.container{
+	padding: 0 3em;
+	padding-bottom: 3em;
+}
+/*Resetting some User agent styles */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	background-color: var(--primary-color);
+}
+header > nav{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1em;
+}
+header > nav > div > ul{
+	display: flex;
+}
+header > nav > div > ul li{
+	padding: 0 .5em;
+	list-style-type: none;
+}
+header > nav > div > ul li a{	
+	/*text-transform: none;*/
+	text-decoration: none;
+	color: var(--white);
+}
+header > nav > div > ul li:last-child a{
+	background-color: var(--yellow);
+	color: var(--primary-color);
+	padding: 0.5em;
+	border-radius: .3em;
+}
+header > section{
+	padding-top: 5em;
+	display: flex;
+	justify-content: space-between;
+}
+header > section > div > h6{
+	color: var(--yellow);
+}
+header > section > div > h2{
+	color: var(--white);
+	font-size: 2.5em;
+}
+header > section > div > p{
+	color: var(--white);
+	font-size: 1.1em;
+	padding-bottom: 1em;
+}
+header > section > div:nth-child(2) img{
+	/*display: none;*/
+	height: 25em;
+	position: relative;
+	left: 7em;
+
+}
+header > section > div:nth-child(3) img{
+	/*display: none;*/
+	width: 100%;
+	height: 12.5em;
+	padding-left: 7.5em;
+	padding-bottom: .5em;
+}
+.btn{
+	background-color: var(--yellow);
+	padding: .8em 4em;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	color: var(--primary-color);
+	cursor: pointer;
+}
+header > section > div > div a{
+	background-color: transparent;
+	color: var(--yellow);
+	border: 1px solid var(--white);
+	padding: .5em 2em;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+/*MAIN FIRST SECTION*/
+
+main > section:first-child{
+	background-color: #F1F1F1;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+main > section:first-child div img{
+	width: 400px;
+
+}
+main > section:first-child div:last-child{
+	padding-left: 3em;
+
+}
+main > section:first-child div:last-child h1{
+	font-size: 3em;
+	font-weight: bold;
+	padding-bottom: .7em;
+}
+main > section:first-child div:last-child p{
+	line-height: 1.5em;
+	padding-bottom: 1.5em;
+}
+main > section:nth-child(2){
+	background-color: var(--primary-color);
+	display: flex;
+	/*justify-content: space-between;*/
+	padding-top: 3em;
+}
+main > section:nth-child(2) div h6{
+	color: var(--yellow);
+}
+main > section:nth-child(2) div h2{
+	color: var(--white);
+	font-size: 3em;
+}
+main > section:nth-child(2) div .number-circle{
+	background-color: seagreen;
+	padding: 1em;
+	padding-top: .4em;
+	padding-left: .7em;
+	/*padding-bottom: 1em;*/
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	color: #fff;
+}
+main > section:nth-child(2) div .all-details{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	grid-row-gap: 3em;
+	padding-top: 2em;
+}
+main > section:nth-child(2) div .first-para{
+	color: limegreen;
+	padding-top: 7px;
+	padding-bottom: .9em;
+}
+main > section:nth-child(2) div .second-para{
+	color: white;
+}
+main > section:nth-child(2) div img{
+	width:200px
+	height: 100%;
+}
+main section:nth-child(2) .details-container{
+	max-width: 18em;
+}
+main section:nth-child(3){
+	background-color:  #F1F1F1;
+	padding-top: 3em;
+}
+main section:nth-child(3) .content-container{
+	justify-content: space-between;
+	display: flex;
+	padding-left: 100px;
+	padding: 2em 1.5em;
+}
+main section:nth-child(3) div h2{
+	text-align: center;
+	font-size: 3em; 
+}
+main section:nth-child(3) div h6{
+	padding: 1em 1.5em;
+	text-decoration: underline 2px rgb(255, 203, 103);
+	font-size: 1.3em;
+	font-weight: bold;
+}
+main section:nth-child(3) div p{
+	padding-left: 2em;
+	padding-bottom: 1em;
+}
+main section:nth-child(3) div a{
+	background-color: var(--white);
+	padding: .5em 1em;
+	margin: 5em 2em;
+	margin-top: 2em;
+	text-decoration: none;
+	color:  black;
+	border: 1px solid black;
+}
+main section:nth-child(3) .content-3{
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+main section:nth-child(3) .content-3 img{
+	width: 8%;
+	height: 8%
+}
+
+/*footer starts*/
+footer{
+	background-color: var(--primary-color);
+}
+footer section{
+	padding: 1.5em 8em;
+	display: flex;
+	justify-content: space-between;
+}
+footer section > div > h3{
+	color:  var(--yellow);
+}
+footer section > div > p{
+	color:  var(--white);
+}
+footer section > div > a{
+	text-decoration: none;
+	color:  var(--white);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
